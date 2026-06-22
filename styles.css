@@ -471,10 +471,7 @@
   right: 130px;
 }
 
-.stats-row {
-  width: min(1500px, calc(100% - 90px));
-  margin: -42px auto 0;
-}
+
 
 /* Medium screens */
 @media (max-width: 1200px) {
@@ -535,9 +532,6 @@
     width: min(380px, 88%);
   }
 
-  .stats-row {
-    width: calc(100% - 44px);
-  }
 }
 
 /* Mobile */
@@ -609,39 +603,5 @@
   .skill-six {
     right: 0;
     bottom: 55px;
-  }
-
-  .stats-row {
-    width: calc(100% - 32px);
-    margin: -30px auto 0;
-  }
-}
-
-
-
-/* ===== NAVBAR WIDTH SAME AS HERO ===== */
-
-.top-nav {
-  width: min(1500px, calc(100% - 90px));
-  max-width: 1500px;
-}
-
-/* Keep navbar good on medium screens */
-@media (max-width: 1200px) {
-  .top-nav {
-    width: min(1180px, calc(100% - 56px));
-  }
-}
-
-/* Keep mobile navbar proper */
-@media (max-width: 1050px) {
-  .top-nav {
-    width: calc(100% - 44px);
-  }
-}
-
-@media (max-width: 640px) {
-  .top-nav {
-    width: calc(100% - 32px);
   }
 }
