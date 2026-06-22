@@ -392,3 +392,227 @@
   .skill-five { left: 0; bottom: 95px; }
   .skill-six { right: 5px; bottom: 52px; }
 }
+
+
+
+/* ===== HERO FULL WIDTH FIX + BIGGER PHOTO ===== */
+
+.hero {
+  min-height: 100vh;
+  padding: 135px 0 95px;
+}
+
+.hero-content.hero-split {
+  width: min(1500px, calc(100% - 90px));
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-copy {
+  max-width: 680px;
+}
+
+.hero-photo-wrap {
+  min-height: 620px;
+  width: 100%;
+  justify-content: center;
+  transform: translateX(35px);
+}
+
+.hero-person {
+  width: min(560px, 100%);
+  max-height: 620px;
+}
+
+.hero-photo-glow,
+.orbit-one {
+  width: 560px;
+  height: 560px;
+  top: 35px;
+}
+
+.orbit-two {
+  width: 430px;
+  height: 430px;
+  top: 100px;
+}
+
+.skill-one {
+  top: 105px;
+  left: 70px;
+}
+
+.skill-two {
+  top: 150px;
+  right: 85px;
+}
+
+.skill-three {
+  top: 265px;
+  left: 50px;
+}
+
+.skill-four {
+  top: 345px;
+  right: 95px;
+}
+
+.skill-five {
+  bottom: 170px;
+  left: 70px;
+}
+
+.skill-six {
+  bottom: 115px;
+  right: 130px;
+}
+
+.stats-row {
+  width: min(1500px, calc(100% - 90px));
+  margin: -42px auto 0;
+}
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  .hero-content.hero-split {
+    width: min(1180px, calc(100% - 56px));
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .hero-photo-wrap {
+    transform: translateX(10px);
+  }
+
+  .hero-person {
+    width: min(470px, 100%);
+  }
+
+  .hero-photo-glow,
+  .orbit-one {
+    width: 470px;
+    height: 470px;
+    top: 60px;
+  }
+
+  .orbit-two {
+    width: 360px;
+    height: 360px;
+    top: 115px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+  .hero {
+    padding: 145px 0 80px;
+  }
+
+  .hero-content.hero-split {
+    width: min(760px, calc(100% - 44px));
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .hero-photo-wrap {
+    min-height: 520px;
+    transform: none;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-person {
+    width: min(380px, 88%);
+  }
+
+  .stats-row {
+    width: calc(100% - 44px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .hero {
+    padding: 130px 0 65px;
+  }
+
+  .hero-content.hero-split {
+    width: calc(100% - 32px);
+    gap: 25px;
+  }
+
+  .hero h2 {
+    font-size: 3.3rem;
+  }
+
+  .hero-photo-wrap {
+    min-height: 430px;
+  }
+
+  .hero-person {
+    width: min(310px, 86%);
+  }
+
+  .hero-photo-glow,
+  .orbit-one {
+    width: 310px;
+    height: 310px;
+    top: 70px;
+  }
+
+  .orbit-two {
+    width: 235px;
+    height: 235px;
+    top: 108px;
+  }
+
+  .floating-skill {
+    font-size: 10px;
+    padding: 7px 9px;
+  }
+
+  .skill-one {
+    left: 0;
+    top: 80px;
+  }
+
+  .skill-two {
+    right: 0;
+    top: 125px;
+  }
+
+  .skill-three {
+    left: 0;
+    top: 215px;
+  }
+
+  .skill-four {
+    right: 0;
+    top: 260px;
+  }
+
+  .skill-five {
+    left: 0;
+    bottom: 95px;
+  }
+
+  .skill-six {
+    right: 0;
+    bottom: 55px;
+  }
+
+  .stats-row {
+    width: calc(100% - 32px);
+    margin: -30px auto 0;
+  }
+}
